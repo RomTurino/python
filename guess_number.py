@@ -38,9 +38,11 @@ def game():
         attempts -= 1
         print(f"Осталось {attempts} {attempt_end(attempts)}")
     
-    answer = input("Если желаешь сыграть еще, нажми Enter, если нет - введи что-нибудь")
+    answer = input("Если желаешь сыграть еще, нажми Enter, если нет - введи что-нибудь: ")
     if not answer:
         return game()
     print("Ну что ж, это была восхитительная игра. Всего хорошего тебе, человек!")
 
-game()
+
+if __name__ == "__main__":
+    game()
